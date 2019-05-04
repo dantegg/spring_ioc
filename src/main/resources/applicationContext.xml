@@ -4,5 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--UserService 的创建权交给了Spring-->
-    <bean id="userService" class="com.imooc.ioc.demo1.UserServiceImpl" />
+    <bean id="userService" class="com.imooc.ioc.demo1.UserServiceImpl" >
+        <!--设置属性-->
+        <property name="name" value="哈哈"/>
+    </bean>
+    <bean id="food" class="com.imooc.ioc.demo1.Food">
+        <property name="name" value="香蕉"/>
+        <property name="kind" value="水果"/>
+        <property name="taste" value="甜甜的"/>
+    </bean>
 </beans>
