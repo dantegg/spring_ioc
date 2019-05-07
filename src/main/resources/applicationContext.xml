@@ -13,4 +13,11 @@
         <property name="kind" value="水果"/>
         <property name="taste" value="甜甜的"/>
     </bean>
+
+    <!--Bean实例化三种方式-->
+    <!--第一种：无参数构造器方式-->
+    <bean id="bean1" class="com.imooc.ioc.demo2.Bean1"/>
+
+    <!--第二种：静态工厂的方式-->
+    <bean id  = "bean2" class="com.imooc.ioc.demo2.Bean2Factory" factory-method="createBean2"/>
 </beans>
