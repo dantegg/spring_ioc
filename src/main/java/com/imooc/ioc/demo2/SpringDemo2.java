@@ -23,4 +23,11 @@ public class SpringDemo2 {
 
         Bean2 bean2 = (Bean2) applicationContext.getBean("bean2");
     }
+
+    @Test
+    public void demo3() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        Bean3 bean3 = (Bean3) applicationContext.getBean("bean3");
+    }
 }
