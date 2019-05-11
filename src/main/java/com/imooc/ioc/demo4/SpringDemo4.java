@@ -19,4 +19,19 @@ public class SpringDemo4 {
         Person user = (Person) applicationContext.getBean("person");
         System.out.println(user);
     }
+
+    @Test
+    public void test3() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Person user = (Person) applicationContext.getBean("person1");
+        System.out.println(user);
+    }
+
+
+    @Test
+    public void test4() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Product product = (Product) applicationContext.getBean("product");
+        System.out.println(product);
+    }
 }
