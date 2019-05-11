@@ -28,9 +28,23 @@
     <!--Bean的作用范围-->
     <!--<bean id="person" class="com.imooc.ioc.demo3.Person" scope="singleton"/>-->
 
-    <bean id="man" class="com.imooc.ioc.demo3.Man" init-method="setup" destroy-method="teardown">
-        <property name="name" value="张三"/>
+    <!--<bean id="man" class="com.imooc.ioc.demo3.Man" init-method="setup" destroy-method="teardown">-->
+        <!--<property name="name" value="张三"/>-->
+    <!--</bean>-->
+    <!--<bean class="com.imooc.ioc.demo3.MyBeanPostProsser" />-->
+    <!--<bean id="userDao" class="com.imooc.ioc.demo3.UserDaoImpl" />-->
+    <bean id="user" class="com.imooc.ioc.demo4.User">
+        <!--<constructor-arg name="age" value="1"/>-->
+        <!--<constructor-arg name="name" value="测试"/>-->
     </bean>
-    <bean class="com.imooc.ioc.demo3.MyBeanPostProsser" />
-    <bean id="userDao" class="com.imooc.ioc.demo3.UserDaoImpl" />
+
+    <bean id="person" class="com.imooc.ioc.demo4.Person">
+        <property name="age" value="1"/>
+        <property name="name" value="哈哈哈"/>
+        <property name="cat" ref="cat"/>
+    </bean>
+
+    <bean id="cat" class="com.imooc.ioc.demo4.Cat">
+        <property name="name" value="mimi"/>
+    </bean>
 </beans>
