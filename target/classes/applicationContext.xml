@@ -32,4 +32,5 @@
         <property name="name" value="张三"/>
     </bean>
     <bean class="com.imooc.ioc.demo3.MyBeanPostProsser" />
+    <bean id="userDao" class="com.imooc.ioc.demo3.UserDaoImpl" />
 </beans>

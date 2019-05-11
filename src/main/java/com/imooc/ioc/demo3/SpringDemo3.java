@@ -2,6 +2,7 @@ package com.imooc.ioc.demo3;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringDemo3 {
@@ -32,5 +33,15 @@ public class SpringDemo3 {
         System.out.println(man1);
         man1.run();
         context.close();
+    }
+
+    @Test
+    public void demo4() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserDao user = (UserDao) context.getBean("userDao");
+        user.findAll();
+        user.delete();
+        user.save();
+        user.update();
     }
 }
