@@ -92,6 +92,7 @@
   <component name="ProjectId" id="27yM8ey2PlLMKX4MLIKpq8dayIZ" />
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="F:/project" />
@@ -118,5 +119,27 @@
       <workItem from="1650287716005" duration="1000" />
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1650287914848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1650287914848" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1650287914848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1650287914848" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1650287914848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1650287914848" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1650287914848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1650287914848" />
+    <state x="334" y="234" key="new project wizard" timestamp="1650287881123">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="334" y="234" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1650287881123" />
   </component>
 </project>
