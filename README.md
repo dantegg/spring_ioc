@@ -2,4 +2,4 @@
 
 learning spring and mybatis
 
-a test demo
+a test demo@employee management system
