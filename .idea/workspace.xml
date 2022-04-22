@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e41e545-4446-44da-81e7-3d659c1b2a04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_service/src/main/resources/com.dantegg.sm.dao/DepartmentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/resources/com.dantegg.sm.dao/DepartmentDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -264,7 +265,7 @@
       <workItem from="1650410511371" duration="3845000" />
       <workItem from="1650444940964" duration="4123000" />
       <workItem from="1650498596942" duration="2925000" />
-      <workItem from="1650585656578" duration="1719000" />
+      <workItem from="1650585656578" duration="2545000" />
     </task>
     <servers />
   </component>
@@ -288,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650587334580" />
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1650586441854">
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1650588066546">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650586441854" />
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650588066546" />
     <state x="552" y="198" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1650499784322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
