@@ -4,6 +4,9 @@ import com.dantegg.sm.entity.Department;
 
 import java.util.List;
 
+/**
+ * @author dantegg
+ */
 public interface DepartmentService {
     void add(Department department);
     void remove(Integer id);
