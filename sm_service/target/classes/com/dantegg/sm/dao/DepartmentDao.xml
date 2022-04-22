@@ -16,7 +16,7 @@
     <update id="update" parameterType="Department">
         update department set name = #{name}, address=#{address} where id=#{id}
     </update>
-    <select id="selectById" parameterType="Integer" resultMap="resultMap">
+    <select id="searchById" parameterType="Integer" resultMap="resultMap">
         select * from department where id = #{id}
     </select>
     <select id="selectAll" resultMap="resultMap">

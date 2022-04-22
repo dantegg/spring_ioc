@@ -53,6 +53,10 @@
                 <tr>
                     <td>${dep.name}</td>
                     <td>${dep.address}</td>
+                    <td>
+                        <a href="toEdit.do?id=${dep.id}" class="btn">编辑</a>
+                        <a href="remove.do?id=${dep.id}" class="btn">删除</a>
+                    </td>
                 </tr>
                 </c:forEach>
             </table>
@@ -60,7 +64,7 @@
             <!--右边底部-->
             <div class="r_foot">
                 <div class="r_foot_m">
-                    <a href="add.html" class="btn">添加</a>
+                    <a href="toAdd.do" class="btn">添加</a>
                 </div>
             </div>
             <!--右边底部-->
