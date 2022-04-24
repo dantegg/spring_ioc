@@ -7,7 +7,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e41e545-4446-44da-81e7-3d659c1b2a04" name="Default Changelist" comment="" />
+    <list default="true" id="7e41e545-4446-44da-81e7-3d659c1b2a04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/staff_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sm_web/src/main/java/com/dantegg/sm/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/java/com/dantegg/sm/controller/DepartmentController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -59,12 +63,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\javaProjects\springLearn\spring_ioc\sm_service\src\main\resources\com\dantegg\sm\dao" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\javaProjects\springLearn\spring_ioc\sm_web\src\main\webapp" />
       <recent name="E:\javaProjects\springLearn\spring_ioc\sm_service\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\javaProjects\springLearn\spring_ioc\sm_service\src\main\resources\com\dantegg\sm\dao" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +177,7 @@
       </method>
     </configuration>
     <configuration name="sm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sm/department/list.do" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sm/staff/list.do" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="sm_web:war exploded">
@@ -294,6 +298,8 @@
       <workItem from="1650585656578" duration="10704000" />
       <workItem from="1650617665965" duration="2244000" />
       <workItem from="1650628997284" duration="5449000" />
+      <workItem from="1650676474807" duration="1805000" />
+      <workItem from="1650763300754" duration="2502000" />
     </task>
     <servers />
   </component>
@@ -313,18 +319,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="198" key="#Tomcat_Server/0.0.1920.1080@0.0.1920.1080" timestamp="1650449347647" />
-    <state x="414" y="195" width="1092" height="757" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650617397274">
+    <state x="414" y="195" width="1092" height="757" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650765928275">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="414" y="195" width="1092" height="757" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1650617397274" />
+    <state x="414" y="195" width="1092" height="757" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1650765928275" />
     <state x="667" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1650587334580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650587334580" />
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1650588066546">
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1650678095398">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650588066546" />
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1650678095398" />
     <state x="552" y="198" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1650499784322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -405,10 +411,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="700" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1650616753417" />
-    <state x="640" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1650629013150">
+    <state x="640" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1650763308359">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1650629013150" />
+    <state x="640" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1650763308359" />
     <state x="334" y="234" key="new project wizard" timestamp="1650287881123">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

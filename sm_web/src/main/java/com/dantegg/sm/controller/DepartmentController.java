@@ -67,4 +67,6 @@ public class DepartmentController {
         departmentService.remove(id);
         response.sendRedirect("list.do");
     }
+
+
 }
