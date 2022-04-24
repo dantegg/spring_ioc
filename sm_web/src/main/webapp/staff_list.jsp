@@ -62,8 +62,8 @@
                     <td>${staff.did}</td>
                     <td>${staff.status}</td>
                     <td>
-                        <a href="toEdit.do?id=${dep.id}" class="btn">编辑</a>
-                        <a href="remove.do?id=${dep.id}" class="btn">删除</a>
+                        <a href="toEdit.do?id=${staff.id}" class="btn">编辑</a>
+                        <a href="remove.do?id=${staff.id}" class="btn">删除</a>
                     </td>
                 </tr>
                 </c:forEach>

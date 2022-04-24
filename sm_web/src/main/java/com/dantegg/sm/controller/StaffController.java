@@ -37,6 +37,7 @@ public class StaffController {
         String sex = request.getParameter("sex");
         String idNumber = request.getParameter("idNumber");
         String info = request.getParameter("info");
+        Integer did = Integer.parseInt(request.getParameter("did"));
         Date bornDate = null;
         try {
             bornDate = new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("bornDate"));
@@ -50,6 +51,7 @@ public class StaffController {
         staff.setIdNumber(idNumber);
         staff.setInfo(info);
         staff.setBornDate(bornDate);
+        staff.setDid(did);
         staffService.add(staff);
         response.sendRedirect("list.do");
     }

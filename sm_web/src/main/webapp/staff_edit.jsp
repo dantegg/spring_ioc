@@ -60,7 +60,7 @@
                         <li class="clearfix">
                             <span class="title">性别：</span>
                             <div class="li_r">
-                                <input class="chang" name="did" type="text" value="${OBJ.sex}">
+                                <input class="chang" name="sex" type="text" value="${OBJ.sex}">
                                 <i>*</i>
                             </div>
                         </li>
@@ -74,7 +74,7 @@
                         <li class="clearfix">
                             <span class="title">出生日期：</span>
                             <div class="li_r">
-                                <input class="chang" name="idNumber" type="text" value="${OBJ.bornDate}">
+                                <input class="chang" name="bornDate" type="text" value="${OBJ.bornDate}">
                                 <i>*</i>
                             </div>
                         </li>

@@ -24,19 +24,19 @@
         <result property="idNumber" column="id_number" javaType="String" />
         <result property="workTime" column="work_time" javaType="java.util.Date" />
         <result property="leaveTime" column="leave_time" javaType="java.util.Date" />
-        <result property="bornTime" column="born_time" javaType="java.util.Date" />
+        <result property="bornDate" column="born_date" javaType="java.util.Date" />
         <result property="info" column="info" javaType="String" />
         <association property="department" column="did" javaType="Department" select="com.dantegg.sm.dao.DepartmentDao.searchById"/>
     </resultMap>
     <insert id="insert" parameterType="Staff" useGeneratedKeys="true">
         insert into staff(account, password, status, did, name, sex, id_number, work_time, leave_time, born_date)
-        values(#{account}, #{password}, #{status}, #{did}, #{name}, #{sex}, #{idNumber}, #{workTime}, #{leaveTime}, #{bornTime})
+        values(#{account}, #{password}, #{status}, #{did}, #{name}, #{sex}, #{idNumber}, #{workTime}, #{leaveTime}, #{bornDate})
     </insert>
     <delete id="delete" parameterType="Integer">
         delete from staff  where id=#{id}
     </delete>
     <update id="update" parameterType="Staff">
-        update staf set account=#{account}, password=#{password}, status=#{status}, did=#{did},
+        update staff set account=#{account}, password=#{password}, status=#{status}, did=#{did},
         name=#{name}, sex=#{sex}, id_number=#{idNumber}, work_time=#{workTime}, leave_time=#{leaveTime},
         born_date=#{bornDate}
         where id=#{id}
