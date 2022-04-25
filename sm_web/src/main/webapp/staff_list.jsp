@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--<%@taglib prefix="c" uri="http://java.sun.com/jstl/core"%>--%>
 <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
-
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -57,13 +57,14 @@
                 <tr>
                     <td>${staff.name}</td>
                     <td>${staff.sex}</td>
-                    <td>${staff.bornDate}</td>
-                    <td>${staff.workTime}</td>
-                    <td>${staff.did}</td>
+                    <td><fmt:formatDate value="${staff.bornDate}" pattern="yyyy-MM-dd"/></td>
+                    <td><fmt:formatDate value="${staff.workTime}" pattern="yyyy-MM-dd HH:mm"/></td>
+                    <td>${staff.department.name}</td>
                     <td>${staff.status}</td>
                     <td>
                         <a href="toEdit.do?id=${staff.id}" class="btn">编辑</a>
                         <a href="remove.do?id=${staff.id}" class="btn">删除</a>
+                        <a href="detail.do?id=${staff.id}" class="btn">详情</a>
                     </td>
                 </tr>
                 </c:forEach>

@@ -2,6 +2,7 @@ package com.dantegg.sm.controller;
 
 import com.dantegg.sm.entity.Department;
 import com.dantegg.sm.entity.Staff;
+import com.dantegg.sm.service.DepartmentService;
 import com.dantegg.sm.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,9 @@ public class StaffController {
     @Autowired
     private StaffService staffService;
 
+    @Autowired
+    private DepartmentService departmentService;
+
     public void list(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Staff> list= staffService.getAll();
         request.setAttribute("LIST", list);
@@ -28,6 +32,8 @@ public class StaffController {
     }
 
     public void toAdd(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Department> list= departmentService.getAll();
+        request.setAttribute("DLIST", list);
         request.getRequestDispatcher("../staff_add.jsp").forward(request, response);
     }
 
@@ -59,7 +65,8 @@ public class StaffController {
     public void toEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
         Staff staff = staffService.get(id);
-
+        List<Department> dlist= departmentService.getAll();
+        request.setAttribute("DLIST", dlist);
         request.setAttribute("OBJ", staff);
         request.getRequestDispatcher("../staff_edit.jsp").forward(request, response);
     }
@@ -92,5 +99,12 @@ public class StaffController {
         Integer id = Integer.parseInt(request.getParameter("id"));
         staffService.remove(id);
         response.sendRedirect("list.do");
+    }
+
+    public void detail(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Integer id = Integer.parseInt(request.getParameter("id"));
+        Staff staff = staffService.get(id);
+        request.setAttribute("OBJ", staff);
+        request.getRequestDispatcher("../staff_detail.jsp").forward(request, response);
     }
 }

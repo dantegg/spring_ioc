@@ -6,6 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -51,16 +54,45 @@
                             </div>
                         </li>
                         <li class="clearfix">
+                            <span class="title">姓名：</span>
+                            <div class="li_r">
+                                <input class="chang" name="name" type="text">
+                                <i>*</i>
+                            </div>
+                        </li>
+                        <li class="clearfix">
                             <span class="title">部门：</span>
                             <div class="li_r">
-                                <input class="chang" name="did" type="text" value="${OBJ.did}">
+                                <select name="did">
+                                    <c:forEach items="${DLIST}" var="dep">
+                                        <c:if test="${OBJ.did == dep.id}">
+                                        <option value="${dep.id}" selected="selected">${dep.name}</option>
+                                        </c:if>
+                                        <c:if test="${OBJ.did != dep.id}">
+                                            <option value="${dep.id}">${dep.name}</option>
+                                        </c:if>
+                                    </c:forEach>
+
+                                </select>
                                 <i>*</i>
                             </div>
                         </li>
                         <li class="clearfix">
                             <span class="title">性别：</span>
                             <div class="li_r">
-                                <input class="chang" name="sex" type="text" value="${OBJ.sex}">
+                                <span class="radio">
+                                    <input name="sex" type="radio" value="男" checked="checked">
+                                    <em>男</em>
+                                </span>
+                                <span class="radio">
+                                    <c:if test="${OBJ.sex == '女'}">
+                                    <input name="sex" type="radio" value="女" checked="checked">
+                                    </c:if>
+                                    <c:if test="${OBJ.sex != '女'}">
+                                        <input name="sex" type="radio" value="女">
+                                    </c:if>
+                                    <em>女</em>
+                                </span>
                                 <i>*</i>
                             </div>
                         </li>
@@ -74,7 +106,7 @@
                         <li class="clearfix">
                             <span class="title">出生日期：</span>
                             <div class="li_r">
-                                <input class="chang" name="bornDate" type="text" value="${OBJ.bornDate}">
+                                <input class="chang" name="bornDate" type="text" value="<fmt:formatDate value="${staff.bornDate}" pattern="yyyy-MM-dd" />">
                                 <i>*</i>
                             </div>
                         </li>

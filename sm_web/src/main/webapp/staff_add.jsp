@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: dantegg
@@ -52,7 +53,13 @@
                         <li class="clearfix">
                             <span class="title">部门：</span>
                             <div class="li_r">
-                                <input class="chang" name="did" type="text">
+                                <select name="did">
+                                    <c:forEach items="${DLIST}" var="dep">
+
+                                    <option value="${dep.id}">${dep.name}</option>
+                                    </c:forEach>
+
+                                </select>
                                 <i>*</i>
                             </div>
                         </li>
@@ -66,7 +73,14 @@
                         <li class="clearfix">
                             <span class="title">性别：</span>
                             <div class="li_r">
-                                <input class="chang" name="sex" type="text">
+                                <span class="radio">
+                                    <input name="sex" type="radio" value="男" checked="checked">
+                                    <em>男</em>
+                                </span>
+                                <span class="radio">
+                                    <input name="sex" type="radio" value="女">
+                                    <em>女</em>
+                                </span>
                                 <i>*</i>
                             </div>
                         </li>
