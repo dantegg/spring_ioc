@@ -7,9 +7,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e41e545-4446-44da-81e7-3d659c1b2a04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7e41e545-4446-44da-81e7-3d659c1b2a04" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -301,7 +299,7 @@
       <workItem from="1650763300754" duration="5200000" />
       <workItem from="1650843898918" duration="3567000" />
       <workItem from="1650955391115" duration="3207000" />
-      <workItem from="1651015745542" duration="591000" />
+      <workItem from="1651015745542" duration="851000" />
     </task>
     <servers />
   </component>
