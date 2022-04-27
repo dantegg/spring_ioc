@@ -1,19 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: dantegg
-  Date: 2022/4/27
-  Time: 7:40
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>登录</title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/thems.css"/>
-    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/thems.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <!--框架高度设置-->
     <script type="text/javascript">
         $(function(){
@@ -37,17 +30,17 @@
 <body>
 <!--登录-->
 <div class="login">
-    <div class="bg_img"><img src="../images/login_bg.jpg"/></div>
+    <div class="bg_img"><img src="images/login_bg.jpg"/></div>
     <div class="logo">
-        <a href=""><img src="../images/logo.png" alt=""/></a>
+        <a href=""><img src="images/logo.png" alt=""/></a>
     </div>
     <div class="login_m">
-        <form action="index.html" method="post" name="login_form">
+        <form action="login.do" method="post" name="login_form">
             <ul>
                 <li class="wz">用户名</li>
-                <li><input name="" type="text"></li>
+                <li><input name="account" type="text"></li>
                 <li class="wz">密码</li>
-                <li><input name="" type="password"></li>
+                <li><input name="password" type="password"></li>
                 <li class="l_btn">
                     <a href="javascript:login_form.submit();">登录</a>
                 </li>
@@ -58,4 +51,3 @@
 <!--登录-->
 </body>
 </html>
-
