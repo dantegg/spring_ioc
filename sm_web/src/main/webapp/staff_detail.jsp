@@ -13,7 +13,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=8" >
-    <title>编辑员工</title>
+    <title>员工信息</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../css/thems.css">
@@ -38,7 +38,7 @@
     <div class="right_m">
         <div class="hy_list">
             <div class="box_t">
-                <span class="name">编辑员工</span>
+                <span class="name">员工信息</span>
             </div>
             <div class="space_hx">&nbsp;</div>
             <form action="edit.do" method="post" name="addForm">
