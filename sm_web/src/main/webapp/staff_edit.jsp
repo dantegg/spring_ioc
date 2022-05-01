@@ -56,7 +56,7 @@
                         <li class="clearfix">
                             <span class="title">姓名：</span>
                             <div class="li_r">
-                                <input class="chang" name="name" type="text">
+                                <input class="chang" name="name" type="text" value="${OBJ.name}">
                                 <i>*</i>
                             </div>
                         </li>
@@ -106,7 +106,7 @@
                         <li class="clearfix">
                             <span class="title">出生日期：</span>
                             <div class="li_r">
-                                <input class="chang" name="bornDate" type="text" value="<fmt:formatDate value="${staff.bornDate}" pattern="yyyy-MM-dd" />">
+                                <input class="chang" name="bornDate" type="text" value="<fmt:formatDate value="${OBJ.bornDate}" pattern="yyyy-MM-dd" />">
                                 <i>*</i>
                             </div>
                         </li>

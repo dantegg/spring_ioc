@@ -29,8 +29,8 @@
         <association property="department" column="did" javaType="Department" select="com.dantegg.sm.dao.DepartmentDao.searchById"/>
     </resultMap>
     <insert id="insert" parameterType="Staff" useGeneratedKeys="true">
-        insert into staff(account, password, status, did, name, sex, id_number, work_time, leave_time, born_date)
-        values(#{account}, #{password}, #{status}, #{did}, #{name}, #{sex}, #{idNumber}, #{workTime}, #{leaveTime}, #{bornDate})
+        insert into staff(account, password, status, did, name, sex, id_number, work_time, leave_time, born_date, info)
+        values(#{account}, #{password}, #{status}, #{did}, #{name}, #{sex}, #{idNumber}, #{workTime}, #{leaveTime}, #{bornDate},#{info})
     </insert>
     <delete id="delete" parameterType="Integer">
         delete from staff  where id=#{id}
@@ -38,7 +38,7 @@
     <update id="update" parameterType="Staff">
         update staff set account=#{account}, password=#{password}, status=#{status}, did=#{did},
         name=#{name}, sex=#{sex}, id_number=#{idNumber}, work_time=#{workTime}, leave_time=#{leaveTime},
-        born_date=#{bornDate}
+        born_date=#{bornDate}, info=${info}
         where id=#{id}
     </update>
     <select id="selectById" parameterType="Integer" resultMap="resultMap">

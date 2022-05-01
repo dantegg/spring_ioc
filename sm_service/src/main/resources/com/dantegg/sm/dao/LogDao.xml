@@ -5,7 +5,7 @@
         <result property="oprTime" column="opr_time" javaType="java.util.Date" />
         <result property="type" column="type" javaType="String" />
         <result property="operator" column="operator" javaType="String" />
-        <result property="module" column="module" javaType="String" />
+        <result property="module" column="moudle" javaType="String" />
         <result property="operation" column="operation" javaType="String" />
         <result property="result" column="result" javaType="String" />
     </resultMap>
@@ -14,6 +14,6 @@
     </insert>
 
     <select id="selectByType" parameterType="String" resultMap="resultMap">
-        select * from log where type = ${type} order by opr_time desc
+        select * from log where type = "${type}" order by opr_time desc
     </select>
 </mapper>
